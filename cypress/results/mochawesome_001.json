@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-04-12T13:30:01.374Z",
+    "end": "2022-04-12T13:30:10.103Z",
+    "duration": 8729,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d6ce5a33-0f91-4e42-b947-4c6d69556b96",
+      "title": "",
+      "fullFile": "cypress/integration/createNotOK.spec.js",
+      "file": "cypress/integration/createNotOK.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "a931e512-2b64-4e70-a580-20f99c297cea",
+          "title": "Create not ok tests suite ",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": " Create account with user name empty ",
+              "fullTitle": "Create not ok tests suite   Create account with user name empty ",
+              "timedOut": null,
+              "duration": 4990,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get(\"#lastName\").type(firstName);\ncy.get(\"#signup-email\").type(Email);\ncy.get(\"#signup-password\").type(\"Fakeman12345?\");\ncy.get('[data-qa=\"signup-submit-button\"]').click();\ncy.url().should(\"include\", \"/register\");\ncy.contains(\"obligatoire\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "f1bea6ba-0dba-4193-a53e-dba79492a0f8",
+              "parentUUID": "a931e512-2b64-4e70-a580-20f99c297cea",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "f1bea6ba-0dba-4193-a53e-dba79492a0f8"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4990,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
